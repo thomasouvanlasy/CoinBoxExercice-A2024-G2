@@ -30,7 +30,7 @@ jobs:
       run: |
         cd src
         python -m unittest
-        coverage run -m unittest discover -s src
+        coverage run -m unittest
         coverage html
         zip -r coverage_report.zip htmlcov/
 
